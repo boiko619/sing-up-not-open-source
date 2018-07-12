@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.guest {
+  display: grid;
+  grid-template-areas: "guesttop guesttop guesttop "
+ "guestleft login guestright"
+ "guestbase guestbase guestbase";
+  grid-template-columns: 1fr minmax(400px, 2fr) 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  height: 30em;
+  width: 100%;
+  margin-top: 200px;
+  position: relative; }
+
+.guesttop {
+  grid-area: guesttop; }
+
+.guestleft {
+  grid-area: guestleft; }
+
+.guestright {
+  grid-area: guestright; }
+
+.guestbase {
+  grid-area: guestbase; }
+
+.login {
+  display: grid;
+  grid-area: login;
+  grid-template-areas: "title"
+ "passwords"
+ "button";
+  grid-gap: 5px;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-radius: 40px 40px 40px 40px;
+  border: 3px solid #573757;
+  box-shadow: 0px 0px 206px 2px rgba(71, 22, 0, 0.51); }
+
+#title {
+  grid-area: title;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cookie', cursive; }
+  #title p {
+    font-size: 1.5em; }
+
+.passwords {
+  grid-area: passwords;
+  display: grid;
+  grid-template-areas: "mail"
+ "pass"
+ "passcheck";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2px;
+  padding: 0 5%; }
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: button; }
+  .button #login-button, .button #singup-button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+    border: 3px solid #573757;
+    background: #b86db8; }
+
+#mail {
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  border: 3px solid #573757;
+  grid-area: mail; }
+
+#pass{
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  border: 3px solid #573757;
+  grid-area: pass; }
+
+#passcheck{
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  border: 3px solid #573757;
+  grid-area: passcheck; }
+
+/*.user{
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 40px;
+
+}*/
+
+
+

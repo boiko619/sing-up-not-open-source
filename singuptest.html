@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prod</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+
+
+
+</head>
+<body>  
+    
+
+    
+<div class="guest">
+    <div class="guesttop"></div>
+    <div class="guestleft"></div>
+    <div class="login1">
+      <form class="login">
+        <div id="title">
+            
+        </div>
+        <div class="passwords">
+            
+            <input name="mail" type="email" id="mail" placeholder=" Email">
+            <input name="pass" type="password" id="pass" placeholder=" Password" onchange='check_pass();'>
+            <input name="passcheck" type="password" id="passcheck" placeholder=" Password Ceck" onchange='check_pass();'>
+        </div>
+        <div class="button">
+            <input name="button_singup" type="submit" id="singup-button" value="Sing Up" >
+        </div>
+      </form>
+    </div>
+    <div class="guestright"></div>
+    <div class="guestbase">
+       
+
+        </div>
+    </div>
+  
+    
+</div>
+
+<script type="text/javascript">
+function check_pass() {
+    if (document.getElementById('pass').value ==
+            document.getElementById('passcheck').value) {
+        document.getElementById('title').innerHTML = 'Совпадает';
+    } else {
+        document.getElementById('title').innerHTML = 'несовпадает';
+    }
+}
+</script>
+
+
+
+
+</body>
+</html>
